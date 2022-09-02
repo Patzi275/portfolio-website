@@ -9,7 +9,7 @@ body {
 
 .navbar-brand::after {
   position: absolute;
-  top: 26%;
+  top: 30%;
   right: -38%;
   width: 35%;
   height: 40%;

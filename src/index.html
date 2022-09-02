@@ -164,13 +164,25 @@
                     <span class="fs-4 fw-bold">E-mail</span>
                     <p class="">patrickzocli2021@gmail.com</p>
                 </div>
-                <div class="col-sm-6 d-flex flex-column align-items-center bg-dark py-5">
-                    <h2 class="title text-light mb-5">Contact form</h2>
-                    <input type="text" placeholder="Your name" class="mb-3">
-                    <input type="tel" placeholder="Your phone" class="mb-3">
-                    <input type="email" placeholder="Your mail" class="mb-3">
-                    <textarea placeholder="Message" class="mb-3"></textarea>
-                    <input type="button" value="Send" class="see-more">
+                <div class="col-sm-6 d-flex flex-column align-items-center bg-dark rounded-top py-5">
+                    <h2 class="title text-light ">Contact form</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name :</label>
+                            <input class="form-control" type="text" id="name" name="fullname" placeholder="Your name...">
+            
+                            <label for="phone">Full Name :</label>
+                            <input class="form-control" type="tel" id="phone" name="phone" placeholder="Your hone...">
+            
+                            <label for="email">Email :</label>
+                            <input class="form-control" type="text" id="email" name="email" placeholder="Your email...">
+            
+                            <label for="message">Message :</label>
+                            <textarea class="form-control textarea" id="message" rows="3" placeholder="Your message..."></textarea>
+            
+                            <input onclick="sendmail()" type="button" value="Send" class="see-more d-block mt-2 mx-auto">
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -180,6 +192,7 @@
     </footer>
 
     <!--<script src="../assert/js/views/docSizeViewer.js"></script>-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script src="../assert/js/libs/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

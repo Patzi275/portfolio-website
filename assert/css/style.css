@@ -7,6 +7,10 @@ body {
   font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .navbar-brand::after {
   position: absolute;
   top: 26%;
@@ -76,6 +80,7 @@ section > h2, .title {
   padding: 5px 8px;
   box-shadow: 0 1px black;
 }
+
 
 footer {
   height: 50px;

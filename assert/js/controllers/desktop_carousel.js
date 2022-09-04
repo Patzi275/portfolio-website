@@ -107,7 +107,6 @@ let caro_container = {
         this.children[2].fade_in(false);
         this.children[1].grow_more(false);
         this.children[0].grow_less(false);
-        console.log(this.top_id);
     },
     scrollUp: function() {
         this.top_id -= 1;
@@ -118,7 +117,6 @@ let caro_container = {
         this.children[2].grow_less();
         this.children[1].grow_more();
         this.children[0].fade_in();
-        console.log(this.top_id);
         
     }
 }

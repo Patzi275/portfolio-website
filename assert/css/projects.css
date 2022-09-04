@@ -1,0 +1,32 @@
+* {
+  margin: unset;
+  padding: unset;
+}
+
+body {
+  font-size: 20px;
+  font-family: Lato, Arial;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+
+h1 {
+  font-size: 10vw;
+  color: #333;
+}
+
+p {
+  text-align: center;
+}
+
+img {
+  display: none;
+  padding: 20px;
+}

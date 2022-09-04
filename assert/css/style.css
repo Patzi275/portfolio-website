@@ -9,11 +9,11 @@ body {
 
 .navbar-brand::after {
   position: absolute;
-  top: 30%;
-  right: -38%;
+  top: 26%;
+  right: -40%;
   width: 35%;
   height: 40%;
-  background-color: black;
+  background-color: #222;
   content: "";
 }
 
@@ -45,12 +45,20 @@ body {
   background: #ddd;
 }
 
-.wlink {
-  
+.caro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-section > h2,
-.title {
+.caro-container a div {
+  height: 10vw;
+  width: 20vw;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+section > h2, .title {
   padding-left: 10px;
   font-size: 46px;
 }

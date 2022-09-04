@@ -46,7 +46,7 @@
         <!--Welcome-->
         <section class="container-xl d-flex flex-column flex-md-row p-5">
             <div id="welcome-div" class="d-flex flex-column text-center text-md-start px-sm-5" 
-            data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
+            data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000">
             <p>Hi, my name is</p>
             <h1>Patrick Zocli</h1>
             <p>
@@ -56,7 +56,7 @@
                 </p>
             </div>
             <div class="d-flex justify-content-between justify-content-sm-around pt-4 p-sm-4"
-            data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">
+            data-aos="fade-up" data-aos-delay="700" data-aos-duration="2000">
                 <nav id="responsive-nav" class="d-md-none d-flex flex-column" >
                     <a href="#project-section">Projects</a>
                     <a href="#about-section">About</a>
@@ -69,19 +69,28 @@
         </section>
 
         <!--My portfolio-->
-        <section id="project-section" class="container-fluid p-3">
+        <section id="project-section" class="container-fluid p-3" 
+        data-aos="fade-up" data-aos-delay="1100" data-aos-duration="2000">
             <h2>My portfolio</h2>
-            <div id="project-section-desktop" class="d-none d-sm-flex justify-content-around">
+            <div id="project-section-desktop" class="d-none d-md-flex justify-content-around">
                 <div id="desktop-carousel" class="w-50">
-
+                    <div class="caro-container my-4">
+                        <a><div></div></a>
+                        <a><div></div></a>
+                        <a><div></div></a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <input type="button" value="Previous" class="see-more mx-1">
+                        <input type="button" value="Next" class="see-more mx-1">
+                    </div>
                 </div>
-                <div id="project-description" class="w-50">
-                    <h3 class="fs-1 fw-bold">Titre</h3>
-                    <p class="fs-3">Shot description</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur consequuntur harum
-                        reiciendis excepturi laborum alias exercitationem cumque explicabo beatae corporis nam maiores
-                        vel hic, debitis tenetur autem porro veniam numquam.
+                <div id="project-description-div" class="w-50">
+                    <h3 class="fs-1 fw-bold">Titre 1</h3>
+                    <p id="project-shot-description" class="fs-3">First project shot description</p>
+                    <p id="project-description">
+                        Harum neque eum laboriosam dolorem perspiciatis molestiae animi rerum. Ut natus et esse corporis 
+                        suscipit dolore ex quam. Eveniet nostrum molestiae temporibus fugiat itaque aut blanditiis nemo. 
+                        Quae neque nesciunt praesentium et aut ullam.
                     </p>
                     <div id="project-skills">
                         <p class="fs-2 fw-bold">Skills</p>
@@ -91,7 +100,7 @@
                 </div>
             </div>
 
-            <div id="project-section-mobile" class="d-sm-none p-2 py-4">
+            <div id="project-section-mobile" class="d-md-none p-2 py-4">
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti iste officia ratione totam beatae
                     ex quam excepturi ullam id quod saepe accusantium consequuntur corrupti reprehenderit modi debitis
@@ -100,13 +109,13 @@
                 <div id="mobile-carousel" class="carousel slide shadow" data-bs-ride="carousel">
                     <div class="carousel-inner pb-4">
                         <div class="carousel-item active">
-                            <img src="assert/img/base_img.png" class="d-block w-100" alt="...">
+                            <img src="assert/img/base1.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="assert/img/base_img.png" class="d-block w-100" alt="...">
+                            <img src="assert/img/base2.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="assert/img/base_img.png" class="d-block w-100" alt="...">
+                            <img src="assert/img/base3.png" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#mobile-carousel"
@@ -126,7 +135,8 @@
         </section>
 
         <!--About me-->
-        <section id="about-section" class="container-fluid p-3">
+        <section id="about-section" class="container-fluid p-3"
+        data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000">
             <h2 data-aos="">About me</h2>
             <div class="container mt-5">
                 <div class="d-flex align-items-center">
@@ -142,7 +152,8 @@
         </section>
 
         <!--Skills-->
-        <div class="container p-3 my-5 shadow bg-dark rounded">
+        <div class="container p-3 my-5 shadow bg-dark rounded"
+        data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <h2 class="title text-light">&ltMy skills/&gt</h2>
             <hr class="bg-light">
             <span class="fs-5 badge bg-light text-dark mb-2">C</span>
@@ -193,16 +204,18 @@
     </footer>
 
     <!--<script src="assert/js/views/docSizeViewer.js"></script>-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript" src="assert/js/libs/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="assert/js/controllers/emailjs.js"></script>
-    
-    <script type="text/javascript" src="assert/js/views/aosAnimation.js"></script>
-    <script type="text/javascript" src="assert/js/libs/aos/dist/aos.js"></script>
-    <script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="assert/js/libs/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assert/js/libs/aos/dist/aos.js"></script>
+
+    <script src="assert/js/views/aosAnimation.js"></script>
+    <script src="assert/js/controllers/emailjs.js"></script> 
+    <script type="text/javascript">
         AOS.init({once: true,});
     </script>
-    <script type="text/javascript" src="assert/js/views/animeAnimation.js"></script>
+    <script src="assert/js/libs/anime/lib/anime.min.js"></script>
+    <script src="assert/js/views/animeAnimation.js"></script>
+    <script src="assert/js/controllers/desktop_carousel.js"></script>
 </body>
 
 </html>

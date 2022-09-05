@@ -76,6 +76,11 @@ section > h2, .title {
   transform: rotate(20deg);
 }
 
+#contact-section:last-child a img{
+  max-width: 30px;
+  margin: 5px;
+}
+
 .see-more {
   padding: 5px 8px;
   box-shadow: 0 1px black;

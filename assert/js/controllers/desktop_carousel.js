@@ -73,12 +73,12 @@ let caro_container = {
     node: document.getElementsByClassName("caro-container")[0],
     children: [],
     images_url: [
-        "/home/patrick/Documents/Stage/Portfolio/Portfolio/assert/img/base1.png",
-        "/home/patrick/Documents/Stage/Portfolio/Portfolio/assert/img/base2.png",
-        "/home/patrick/Documents/Stage/Portfolio/Portfolio/assert/img/base3.png",
+        "assert/img/base1.png",
+        "assert/img/base2.png",
+        "assert/img/base3.png",
 
-        "/home/patrick/Documents/Stage/Portfolio/Portfolio/assert/img/base1.png",
-        "/home/patrick/Documents/Stage/Portfolio/Portfolio/assert/img/base2.png",
+        "assert/img/base1.png",
+        "assert/img/base2.png",
     ],
     top_id: 0,
     init: function() {
@@ -89,8 +89,10 @@ let caro_container = {
             this.children[i].background_url = this.images_url[i]
             //this.node.appendChild(this.children[i].node);
         }
-        
+        this.children[0].node.style.opacity = "70%";
         this.children[1].node.style.transform = "scale(1.5)";
+        this.children[1].node.style.zIndex = "1";
+        this.children[2].node.style.opacity = "70%";
     },
     reload: function() {
         let id = this.top_id;

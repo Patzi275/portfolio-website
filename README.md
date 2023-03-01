@@ -1,4 +1,4 @@
-# portfolio-website
+# Portfolio
 ## Description
 This is a responsive portfolio made to be simple and animated.
 
